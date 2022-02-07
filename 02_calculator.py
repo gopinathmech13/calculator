@@ -4,6 +4,7 @@ while True:
     
     para=input("press (+,-,*,/) or press q to quit : ")
     if para=="q":
+        result=num1
         print("final result=",result)
         break
     num2=float(input("enter another number : "))
