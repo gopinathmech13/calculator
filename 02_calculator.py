@@ -2,7 +2,10 @@ num1 =float(input("enter a number : "))
 
 while True: 
     
-    para=input("press +,-,*,/, or press q to quit \n ")
+    para=input("press (+,-,*,/) or press q to quit : ")
+    if para=="q":
+        print("final result=",result)
+        break
     num2=float(input("enter another number : "))
     if para =="+" :
         #num2=0
@@ -25,9 +28,6 @@ while True:
         result=num1/num2
         print("result=",result)
 
-    elif para=="q":
-        print("final result=",result)
-        break
     else:
         print("printing mistake")
         continue
